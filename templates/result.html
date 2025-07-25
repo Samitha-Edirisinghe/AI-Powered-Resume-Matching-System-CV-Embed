@@ -1,0 +1,94 @@
+<!-- Coding by Samitha Randika | https://www.linkedin.com/in/samitha-randika-edirisinghe-b3a68a2b6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Embed - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span style="color: #00bf63;">CV</span>Embed</h1>
+        </header>
+
+        <main>
+            <div class="result-header">
+                <h2>Your Result</h2>
+                <div class="model-info">
+                    Algorithm: {{ session.get('model_type', 'SBERT') | upper }}
+                </div>
+                <div class="score-circle">
+                    <div class="score-text">{{ similarity_score }}%</div>
+                </div>
+            </div>
+            
+            <div class="result-message">
+                {% if similarity_score < 30 %}
+                <p>It seems your resume and this job description have some differences. Don't be discouraged - consider tweaking your resume to highlight relevant experiences or explore other opportunities that might be a better fit.</p>
+                {% elif similarity_score < 60 %}
+                <p>Your resume has some alignment with the job description. Try highlighting more relevant skills and experiences to improve your match.</p>
+                {% else %}
+                <p>Great match! Your resume aligns well with the job requirements.</p>
+                {% endif %}
+            </div>
+            
+            <div class="job-matches">
+                <h3>Your Resume Match With This Job Description</h3>
+                <ol class="match-list">
+                    {% for job, score in top_matches %}
+                    <li>
+                        <span class="job-title">{{ job }}</span>
+                        <span class="similarity-score">Similarity {{ score }}%</span>
+                    </li>
+                    {% endfor %}
+                </ol>
+            </div>
+            
+            <div class="resume-comparison">
+                <div class="resume-section">
+                    <h4>Your Resume</h4>
+                    <div class="content-box">{{ resume_text }}</div>
+                </div>
+                
+                <div class="resume-section">
+                    <h4>Job Description</h4>
+                    <div class="content-box">{{ jd_text }}</div>
+                </div>
+            </div>
+
+            <!-- Add this section after the job matches section -->
+            <div class="job-opportunities">
+                <h3>Job Opportunities</h3>
+                {% if job_listings %}
+                <div class="job-listings">
+                    {% for job in job_listings %}
+                    <div class="job-card">
+                        <div class="job-header">
+                            <h4>{{ job.title }}</h4>
+                            <span class="company">{{ job.company }}</span>
+                        </div>
+                        <div class="job-details">
+                            <span class="location">📍 {{ job.location }}</span>
+                            <a href="{{ job.apply_url }}" target="_blank" class="apply-btn">Apply Now</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>No job listings found. Try another job title.</p>
+                {% endif %}
+            </div>
+            
+            <div class="actions">
+                <button onclick="window.location.href='/'">Analyze More</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>CVEmbed © 2025 All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>

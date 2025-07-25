@@ -1,0 +1,62 @@
+<!-- Coding by Samitha Randika | https://www.linkedin.com/in/samitha-randika-edirisinghe-b3a68a2b6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Embed - Step 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span style="color: #00bf63;">CV</span>Embed</h1>
+        </header>
+
+        <header>
+            <div class="steps">
+                <div class="step completed">Step 1: Add Resume/CV</div>
+                <div class="step active">Step 2: Add Job Description</div>
+                <div class="step">Step 3: Analyze</div>
+            </div>
+        </header>
+
+        <main>
+            <div class="upload-container">
+                <h2>Add Job Description</h2>
+                <form action="/process_jd" method="post" enctype="multipart/form-data" class="upload-form">
+                    <div class="model-selection">
+                        <label for="model_type">Matching Algorithm:</label>
+                        <select id="model_type" name="model_type">
+                            <option value="sbert">SBERT (Recommended)</option>
+                            <option value="glove">GloVe</option>
+                            <option value="doc2vec">Doc2Vec</option>
+                        </select>
+                    </div>
+                    
+                    <div class="upload-option">
+                        <div class="upload-box">
+                            <input type="file" id="jd_file" name="jd_file" accept=".pdf,.docx,.txt" style="display: none;">
+                            <div class="upload-icon">📋</div>
+                            <p class="upload-title">Upload Job Description</p>
+                            <p class="upload-subtitle">(optional)</p>
+                            <button type="button" class="browse-btn" onclick="document.getElementById('jd_file').click()">Browse Files</button>
+                        </div>
+                        <p class="or-divider">or</p>
+                        <div class="text-paste">
+                            <label for="jd_text">Paste Job Description</label>
+                            <textarea id="jd_text" name="jd_text" rows="4" placeholder="Paste job description here..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="analyze-btn">Analyze</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>CVEmbed © 2025 All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
