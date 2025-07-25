@@ -1,0 +1,78 @@
+2025-07-25 16:14:33,740 : WARNING : No documents found at data/documents.txt
+2025-07-25 16:14:33,850 : WARNING : Created minimal documents at data/documents.txt
+2025-07-25 16:14:33,865 : INFO : collecting all words and their counts
+2025-07-25 16:14:33,865 : INFO : PROGRESS: at example #0, processed 0 words (0 words/s), 0 word types, 0 tags
+2025-07-25 16:14:33,865 : INFO : collected 107 word types and 100 unique tags from a corpus of 100 examples and 800 words
+2025-07-25 16:14:33,865 : INFO : Creating a fresh vocabulary
+2025-07-25 16:14:33,896 : INFO : Doc2Vec lifecycle event {'msg': 'effective_min_count=5 retains 7 unique words (6.54% of original 107, drops 100)', 'datetime': '2025-07-25T16:14:33.865731', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'prepare_vocab'}
+2025-07-25 16:14:33,896 : INFO : Doc2Vec lifecycle event {'msg': 'effective_min_count=5 leaves 700 word corpus (87.50% of original 800, drops 100)', 'datetime': '2025-07-25T16:14:33.896942', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'prepare_vocab'}
+2025-07-25 16:14:33,896 : INFO : deleting the raw counts dictionary of 107 items
+2025-07-25 16:14:33,896 : INFO : sample=0.001 downsamples 7 most-common words
+2025-07-25 16:14:33,896 : INFO : Doc2Vec lifecycle event {'msg': 'downsampling leaves estimated 63.466201857385286 word corpus (9.1%% of prior 700)', 'datetime': '2025-07-25T16:14:33.896942', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'prepare_vocab'}
+2025-07-25 16:14:33,912 : INFO : estimated required memory for 7 words and 200 dimensions: 114700 bytes
+2025-07-25 16:14:33,912 : INFO : resetting layer weights
+2025-07-25 16:14:33,912 : INFO : Doc2Vec lifecycle event {'msg': 'training model with 4 workers on 7 vocabulary and 200 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-25T16:14:33.912575', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'train'}
+2025-07-25 16:14:33,928 : INFO : EPOCH 0: training on 800 raw words (155 effective words) took 0.0s, 19366 effective words/s
+2025-07-25 16:14:33,928 : INFO : EPOCH 1: training on 800 raw words (172 effective words) took 0.0s, 42675 effective words/s
+2025-07-25 16:14:33,943 : INFO : EPOCH 2: training on 800 raw words (163 effective words) took 0.0s, 30159 effective words/s
+2025-07-25 16:14:33,943 : INFO : EPOCH 3: training on 800 raw words (150 effective words) took 0.0s, 37498 effective words/s
+2025-07-25 16:14:33,959 : INFO : EPOCH 4: training on 800 raw words (155 effective words) took 0.0s, 41211 effective words/s
+2025-07-25 16:14:33,975 : INFO : EPOCH 5: training on 800 raw words (153 effective words) took 0.0s, 30950 effective words/s
+2025-07-25 16:14:33,975 : INFO : EPOCH 6: training on 800 raw words (174 effective words) took 0.0s, 40256 effective words/s
+2025-07-25 16:14:33,990 : INFO : EPOCH 7: training on 800 raw words (160 effective words) took 0.0s, 27966 effective words/s
+2025-07-25 16:14:33,990 : INFO : EPOCH 8: training on 800 raw words (171 effective words) took 0.0s, 41763 effective words/s
+2025-07-25 16:14:34,006 : INFO : EPOCH 9: training on 800 raw words (174 effective words) took 0.0s, 32212 effective words/s
+2025-07-25 16:14:34,021 : INFO : EPOCH 10: training on 800 raw words (161 effective words) took 0.0s, 35817 effective words/s
+2025-07-25 16:14:34,021 : INFO : EPOCH 11: training on 800 raw words (173 effective words) took 0.0s, 37309 effective words/s
+2025-07-25 16:14:34,037 : INFO : EPOCH 12: training on 800 raw words (150 effective words) took 0.0s, 31651 effective words/s
+2025-07-25 16:14:34,037 : INFO : EPOCH 13: training on 800 raw words (167 effective words) took 0.0s, 43414 effective words/s
+2025-07-25 16:14:34,053 : INFO : EPOCH 14: training on 800 raw words (167 effective words) took 0.0s, 39694 effective words/s
+2025-07-25 16:14:34,068 : INFO : EPOCH 15: training on 800 raw words (158 effective words) took 0.0s, 33600 effective words/s
+2025-07-25 16:14:34,068 : INFO : EPOCH 16: training on 800 raw words (163 effective words) took 0.0s, 32865 effective words/s
+2025-07-25 16:14:34,084 : INFO : EPOCH 17: training on 800 raw words (144 effective words) took 0.0s, 34496 effective words/s
+2025-07-25 16:14:34,084 : INFO : EPOCH 18: training on 800 raw words (167 effective words) took 0.0s, 34720 effective words/s
+2025-07-25 16:14:34,100 : INFO : EPOCH 19: training on 800 raw words (148 effective words) took 0.0s, 34809 effective words/s
+2025-07-25 16:14:34,100 : INFO : Doc2Vec lifecycle event {'msg': 'training on 16000 raw words (3225 effective words) took 0.2s, 17466 effective words/s', 'datetime': '2025-07-25T16:14:34.100069', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'train'}
+2025-07-25 16:14:34,100 : INFO : Doc2Vec lifecycle event {'params': 'Doc2Vec<dm/m,d200,n5,w5,mc5,s0.001,t4>', 'datetime': '2025-07-25T16:14:34.100069', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'created'}
+2025-07-25 16:14:34,100 : INFO : Doc2Vec lifecycle event {'fname_or_handle': 'trained_models/doc2vec.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-25T16:14:34.100069', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'saving'}
+2025-07-25 16:14:34,100 : INFO : not storing attribute cum_table
+2025-07-25 16:14:34,100 : INFO : saved trained_models/doc2vec.model
+2025-07-25 16:14:34,100 : INFO : Doc2Vec model saved to trained_models/doc2vec.model
+2025-07-25 16:39:45,391 : INFO : collecting all words and their counts
+2025-07-25 16:39:45,392 : INFO : PROGRESS: at example #0, processed 0 words (0 words/s), 0 word types, 0 tags
+2025-07-25 16:39:45,394 : INFO : collected 107 word types and 100 unique tags from a corpus of 100 examples and 800 words
+2025-07-25 16:39:45,395 : INFO : Creating a fresh vocabulary
+2025-07-25 16:39:45,427 : INFO : Doc2Vec lifecycle event {'msg': 'effective_min_count=5 retains 7 unique words (6.54% of original 107, drops 100)', 'datetime': '2025-07-25T16:39:45.395491', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'prepare_vocab'}
+2025-07-25 16:39:45,427 : INFO : Doc2Vec lifecycle event {'msg': 'effective_min_count=5 leaves 700 word corpus (87.50% of original 800, drops 100)', 'datetime': '2025-07-25T16:39:45.427802', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'prepare_vocab'}
+2025-07-25 16:39:45,429 : INFO : deleting the raw counts dictionary of 107 items
+2025-07-25 16:39:45,430 : INFO : sample=0.001 downsamples 7 most-common words
+2025-07-25 16:39:45,432 : INFO : Doc2Vec lifecycle event {'msg': 'downsampling leaves estimated 63.466201857385286 word corpus (9.1%% of prior 700)', 'datetime': '2025-07-25T16:39:45.432618', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'prepare_vocab'}
+2025-07-25 16:39:45,434 : INFO : estimated required memory for 7 words and 200 dimensions: 114700 bytes
+2025-07-25 16:39:45,435 : INFO : resetting layer weights
+2025-07-25 16:39:45,436 : INFO : Doc2Vec lifecycle event {'msg': 'training model with 4 workers on 7 vocabulary and 200 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-07-25T16:39:45.436618', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'train'}
+2025-07-25 16:39:45,445 : INFO : EPOCH 0: training on 800 raw words (155 effective words) took 0.0s, 35898 effective words/s
+2025-07-25 16:39:45,458 : INFO : EPOCH 1: training on 800 raw words (172 effective words) took 0.0s, 40565 effective words/s
+2025-07-25 16:39:45,469 : INFO : EPOCH 2: training on 800 raw words (163 effective words) took 0.0s, 20643 effective words/s
+2025-07-25 16:39:45,476 : INFO : EPOCH 3: training on 800 raw words (150 effective words) took 0.0s, 36612 effective words/s
+2025-07-25 16:39:45,490 : INFO : EPOCH 4: training on 800 raw words (155 effective words) took 0.0s, 16862 effective words/s
+2025-07-25 16:39:45,499 : INFO : EPOCH 5: training on 800 raw words (153 effective words) took 0.0s, 29820 effective words/s
+2025-07-25 16:39:45,508 : INFO : EPOCH 6: training on 800 raw words (174 effective words) took 0.0s, 43967 effective words/s
+2025-07-25 16:39:45,515 : INFO : EPOCH 7: training on 800 raw words (160 effective words) took 0.0s, 23660 effective words/s
+2025-07-25 16:39:45,515 : INFO : EPOCH 8: training on 800 raw words (171 effective words) took 0.0s, 25983 effective words/s
+2025-07-25 16:39:45,542 : INFO : EPOCH 9: training on 800 raw words (174 effective words) took 0.0s, 24581 effective words/s
+2025-07-25 16:39:45,552 : INFO : EPOCH 10: training on 800 raw words (161 effective words) took 0.0s, 24362 effective words/s
+2025-07-25 16:39:45,560 : INFO : EPOCH 11: training on 800 raw words (173 effective words) took 0.0s, 43834 effective words/s
+2025-07-25 16:39:45,572 : INFO : EPOCH 12: training on 800 raw words (150 effective words) took 0.0s, 17131 effective words/s
+2025-07-25 16:39:45,585 : INFO : EPOCH 13: training on 800 raw words (167 effective words) took 0.0s, 19022 effective words/s
+2025-07-25 16:39:45,593 : INFO : EPOCH 14: training on 800 raw words (167 effective words) took 0.0s, 39819 effective words/s
+2025-07-25 16:39:45,604 : INFO : EPOCH 15: training on 800 raw words (158 effective words) took 0.0s, 21341 effective words/s
+2025-07-25 16:39:45,614 : INFO : EPOCH 16: training on 800 raw words (163 effective words) took 0.0s, 23640 effective words/s
+2025-07-25 16:39:45,624 : INFO : EPOCH 17: training on 800 raw words (144 effective words) took 0.0s, 39722 effective words/s
+2025-07-25 16:39:45,633 : INFO : EPOCH 18: training on 800 raw words (167 effective words) took 0.0s, 30376 effective words/s
+2025-07-25 16:39:45,642 : INFO : EPOCH 19: training on 800 raw words (148 effective words) took 0.0s, 37621 effective words/s
+2025-07-25 16:39:45,642 : INFO : Doc2Vec lifecycle event {'msg': 'training on 16000 raw words (3225 effective words) took 0.2s, 15712 effective words/s', 'datetime': '2025-07-25T16:39:45.642510', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'train'}
+2025-07-25 16:39:45,643 : INFO : Doc2Vec lifecycle event {'params': 'Doc2Vec<dm/m,d200,n5,w5,mc5,s0.001,t4>', 'datetime': '2025-07-25T16:39:45.643513', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'created'}
+2025-07-25 16:39:45,644 : INFO : Doc2Vec lifecycle event {'fname_or_handle': 'trained_models/doc2vec.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-07-25T16:39:45.644515', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.19045-SP0', 'event': 'saving'}
+2025-07-25 16:39:45,647 : INFO : not storing attribute cum_table
+2025-07-25 16:39:45,650 : INFO : saved trained_models/doc2vec.model
+2025-07-25 16:39:45,651 : INFO : Doc2Vec model saved to trained_models/doc2vec.model
