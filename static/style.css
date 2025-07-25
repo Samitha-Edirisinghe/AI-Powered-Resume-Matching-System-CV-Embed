@@ -1,0 +1,509 @@
+/* Coding by Samitha Randika | https://www.linkedin.com/in/samitha-randika-edirisinghe-b3a68a2b6 */
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary: #2563eb;
+    --primary-light: #dbeafe;
+    --primary-dark: #1d4ed8;
+    --secondary: #64748b;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --light: #f8fafc;
+    --dark: #1e293b;
+    --border: #e2e8f0;
+}
+
+body {
+    background-color: var(--light);
+    color: #334155;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #43455b;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    background-color: #20212c;
+    padding: 15px;
+    margin: -20px -20px 0px -20px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.step {
+    padding: 8px 16px;
+    background: #e0e7ff;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+.step.active {
+    background: #00bf63;
+    color: white;
+}
+
+.step.completed {
+    background: #d1fae5;
+    color: var(--success);
+}
+
+/* Upload Section */
+.upload-container {
+    background: #43455b;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+.upload-container h2 {
+    color: var(--light);
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.upload-option {
+    margin-bottom: 40px;
+}
+
+.upload-box {
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.upload-icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.upload-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--light);
+    margin-bottom: 5px;
+}
+
+.upload-subtitle {
+    color: var(--light);
+    margin-bottom: 15px;
+}
+
+.browse-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.browse-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.or-divider {
+    color: var(--light);
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.text-paste {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.text-paste label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--light);
+    text-align: center;
+}
+
+.text-paste textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    min-height: 120px;
+    font-size: 1rem;
+    resize: vertical;
+    background: #43455b;
+    color: var(--light);
+}
+
+.analyze-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+}
+
+.analyze-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(37, 99, 235, 0.4);
+}
+
+/* Results Page */
+.result-header {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-header h2 {
+    color: var(--light);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.score-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid var(--primary);
+    margin: 20px 0;
+}
+
+.score-text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.result-message {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 1.8;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.job-matches {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.job-matches h3 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.match-list {
+    list-style-type: none;
+    counter-reset: match-counter;
+}
+
+.match-list li {
+    counter-increment: match-counter;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.match-list li::before {
+    content: counter(match-counter) ".";
+    font-weight: 700;
+    color: var(--primary);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.job-title {
+    font-weight: 600;
+    flex: 1;
+    color: var(--dark);
+    font-size: 1.1rem;
+}
+
+.similarity-score {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.resume-comparison {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.resume-section {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.resume-section h4 {
+    margin-bottom: 15px;
+    color: var(--dark);
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+}
+
+.content-box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    background: #f8fafc;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.actions {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.actions button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+}
+
+.actions button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(37, 99, 235, 0.4);
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 30px 0 20px;
+    color: var(--light);
+    font-size: 0.9rem;
+}
+
+/* Add to your existing CSS */
+.job-opportunities {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.job-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.job-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.job-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.company {
+    display: block;
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.apply-btn {
+    background-color: #00bf63;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: #008a4a;
+}
+
+/* Add model selection styles */
+.model-selection {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.model-selection label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--light);
+    font-size: 1.1rem;
+}
+
+.model-selection select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #43455b;
+    color: var(--light);
+    font-size: 1rem;
+    max-width: 300px;
+}
+
+/* Add model info to results */
+.model-info {
+    background: #00bf63;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* ... rest of the CSS remains the same ... */
+
+/* Responsive */
+@media (max-width: 768px) {
+    .upload-container {
+        padding: 20px;
+    }
+    
+    .resume-comparison {
+        flex-direction: column;
+    }
+    
+    .match-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .similarity-score {
+        align-self: flex-end;
+    }
+    
+    .score-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .score-text {
+        font-size: 2rem;
+    }
+}
