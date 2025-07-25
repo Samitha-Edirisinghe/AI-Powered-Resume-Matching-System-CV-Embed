@@ -53,6 +53,24 @@ project_root/
 └── app.py
 ```
 
+## Website Interface
+
+### 1. Resume Upload Page
+
+- Users can upload or paste their resumes on this page.  
+  ![Resume Upload](screenshot/home.png)
+
+### 2. job description Upload Page
+
+- Users can upload or paste their **resumes** on this page.  
+  ![Resume Upload](screenshot/upload.png)
+
+### 3. Results Page
+
+- This page displays the top 5 job descriptions that match the uploaded resume.  
+  ![Results Page](screenshot/result.png)
+
+
 ---
 
 ## Installation & Setup
