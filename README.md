@@ -1,7 +1,6 @@
 # CV Embed: AI-Powered Resume Matching System
 
-CV Embed is an intelligent applicant tracking system that uses AI to match resumes with job descriptions. It provides a similarity score and suggests the best-fitting job roles based on resume content.
-
+CV Embed is an AI resume analyzer that matches candidates with job descriptions using SBERT/GloVe/Doc2Vec models. Calculates compatibility scores, suggests top job matches, and generates real opportunities. Supports PDF/DOCX uploads with Flask backend and Gemini AI integration.
 ---
 
 ## Key Features
